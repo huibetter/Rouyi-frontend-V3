@@ -17,7 +17,7 @@
       <div class="lock-hint">系统已锁定，请输入密码解锁</div>
 
       <div class="input-wrap" :class="{ shake: isShaking }">
-        <input ref="passwordInput" v-model="password" type="password" placeholder="请输入登录密码" class="lock-input" @keydown.enter="handleUnlock" autocomplete="off" />
+        <input ref="passw                                                                                        ordInput" v-model="password" type="password" placeholder="请输入登录密码" class="lock-input" @keydown.enter="handleUnlock" autocomplete="off" />
         <button class="unlock-btn" @click="handleUnlock" :disabled="loading">
           <span v-if="!loading">→</span>
           <span v-else class="loading-dot">···</span>
